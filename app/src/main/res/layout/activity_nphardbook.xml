@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BCD2EE"
+    tools:context=".nphardbook">
+
+    <ImageButton
+        android:id="@+id/nphbookclose"
+        android:layout_width="94dp"
+        android:layout_height="83dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:background="#003060"
+        android:scaleType="fitCenter"
+        android:src="@drawable/home" />
+
+    <ScrollView
+        android:id="@+id/s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/nptitle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:paddingLeft="@dimen/output_margin_buffer"
+            android:text="nphard\n指的也是還沒有找到Polynomial Time的解,但是不確定是不是能在Polynomial Time被驗證的問題 。其中NP Hard的問題又比NPC難。NP-c問題就是NP-hard問題。
+          NP-hard問題它不一定是NP問題，比如，下圍棋就是NP-hard問題，但不是NP問題，我們要在一個殘局上找一個必勝下法，告訴我們下一步下在哪裡。顯然，我們找不這個解，而且更難的是，就算有人給我了一個解，我們也無法在P時間內判斷它是不是正確的。
+"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#191970"
+            android:textSize="40dp"
+            android:typeface="monospace" />
+    </ScrollView>
+</RelativeLayout>

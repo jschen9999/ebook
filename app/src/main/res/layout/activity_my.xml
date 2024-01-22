@@ -1,0 +1,175 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    android:background="#D2E9FF"
+    tools:context=".output">
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_marginTop="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </androidx.viewpager.widget.ViewPager>
+    <RelativeLayout
+        android:layout_width="600dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="-410dp"
+        android:layout_marginTop="0dp"
+        android:background="#005AB5">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="19dp"
+            android:paddingLeft="@dimen/output_margin_buffer"
+            android:text="不可電子書店"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FBFBFF"
+            android:textSize="40dp"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="90dp"
+            android:paddingLeft="@dimen/output_margin_buffer"
+            android:text="歡迎訪客"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FBFBFF"
+            android:textSize="30dp"
+            android:typeface="monospace" />
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+
+            android:paddingLeft="@dimen/output_margin_buffer"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#005AB5"
+            android:textSize="1dp"
+            android:typeface="monospace" />
+
+        <ImageButton
+            android:id="@+id/report"
+            android:layout_width="63dp"
+            android:layout_height="53dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="336dp"
+            android:layout_marginTop="85dp"
+            android:background="#005AB5"
+            android:scaleType="fitCenter"
+            android:src="@drawable/report" />
+
+        <ImageButton
+            android:id="@+id/row"
+            android:layout_width="71dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="93dp"
+            android:background="#005AB5"
+            android:scaleType="fitCenter"
+            android:src="@drawable/row" />
+
+        <!--        <ImageButton-->
+        <!--            android:id="@+id/count"-->
+        <!--            android:layout_width="65dp"-->
+        <!--            android:layout_height="44dp"-->
+        <!--            android:layout_marginLeft="0dp"-->
+        <!--            android:layout_marginTop="15dp"-->
+        <!--            android:background="#005AB5"-->
+        <!--            android:maxWidth="200dp"-->
+        <!--            android:maxHeight="200dp"-->
+        <!--            android:src="@drawable/count"-->
+        <!--            android:textSize="40dp" />-->
+        <ImageButton
+            android:id="@+id/account"
+            android:layout_width="72dp"
+            android:layout_height="59dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:background="#005AB5"
+            android:scaleType="fitCenter"
+            android:src="@drawable/count" />
+
+        <ImageButton
+            android:id="@+id/listbu"
+            android:layout_width="73dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="350dp"
+            android:background="#003060"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            android:src="@drawable/list" />
+
+    </RelativeLayout>
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="6000dp"-->
+<!--        android:layout_height="90dp"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_marginLeft="-600dp"-->
+<!--        android:layout_marginTop="150dp"-->
+<!--        android:background="	#ACD6FF">-->
+
+<!--        <Button-->
+<!--            android:id="@+id/all"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="80dp"-->
+<!--            android:layout_marginLeft="30dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:background="#004B97"-->
+<!--            android:clickable="true"-->
+<!--            android:text="NP"-->
+<!--            android:textAppearance="?android:attr/textAppearanceMedium"-->
+<!--            android:textColor="#F0F0F0"-->
+<!--            android:textSize="30dp"-->
+<!--            android:typeface="monospace" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/np"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="80dp"-->
+<!--            android:layout_marginLeft="120dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:background="#004B97"-->
+<!--            android:clickable="true"-->
+<!--            android:text="NP-hard"-->
+<!--            android:textAppearance="?android:attr/textAppearanceMedium"-->
+<!--            android:textColor="#F0F0F0"-->
+<!--            android:textSize="30dp"-->
+<!--            android:typeface="monospace" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/NPhard"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="80dp"-->
+<!--            android:layout_marginLeft="260dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:background="#004B97"-->
+<!--            android:clickable="true"-->
+<!--            android:text="NP-complete"-->
+<!--            android:textAppearance="?android:attr/textAppearanceMedium"-->
+<!--            android:textColor="#F0F0F0"-->
+<!--            android:textSize="30dp"-->
+<!--            android:typeface="monospace" />-->
+<!--    </RelativeLayout>-->
+
+</LinearLayout>

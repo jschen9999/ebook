@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BCD2EE"
+    tools:context=".vertex">
+
+    <ImageButton
+        android:id="@+id/nphbookclose"
+        android:layout_width="94dp"
+        android:layout_height="83dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:background="#003060"
+        android:scaleType="fitCenter"
+        android:src="@drawable/home" />
+
+    <ScrollView
+        android:id="@+id/s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/nptitle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:paddingLeft="@dimen/output_margin_buffer"
+            android:text="頂點問題\n圖的覆蓋是一些頂點（或邊）的集合，使得圖中的每一條邊（每一個頂點）都至少接觸集合中的一個頂點（邊）。尋找最小的頂點覆蓋的問題稱為頂點覆蓋問題，它是一個NP完全問題。頂點覆蓋和邊覆蓋分別與獨立集合和匹配問題有關。
+         定義
+圖G的頂點覆蓋是一個頂點集合V，使得G中的每一條邊都接觸V中的至少一個頂點。我們稱集合V覆蓋了G的邊。最小頂點覆蓋是用最少的頂點來覆蓋所有的邊。頂點覆蓋是最小頂點覆蓋的大小。相應地，圖G的邊覆蓋是一個邊集合E，使得G中的每一個頂點都接觸E中的至少一條邊。如果只說覆蓋，則通常是指頂點覆蓋，而不是邊覆蓋。
+
+
+
+
+"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#191970"
+            android:textSize="40dp"
+            android:typeface="monospace" />
+    </ScrollView>
+</RelativeLayout>

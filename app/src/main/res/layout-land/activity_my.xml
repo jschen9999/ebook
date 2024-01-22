@@ -1,0 +1,300 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/shippingbck"
+    tools:context=".MyActivity">
+
+    <!-- WEIGHT INPUT SECTION -->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/bu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:background="#C27E00"
+        android:text="App介紹"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/bu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="30dp"
+        android:background="#C27E00"
+        android:text="理想體重"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/paper">
+
+        <!-- TEXTVIEWS FOR BASE COST LABEL AND COMPUTATION  -->
+        <TextView
+            android:id="@+id/nee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="@dimen/output_margin_buffer"
+            android:text="膝長:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/neenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/nee"
+            android:layout_alignBottom="@+id/nee"
+            android:layout_toRightOf="@+id/nee"
+            android:ems="5"
+            android:hint="0"
+            android:inputType="number"
+            android:paddingRight="30dp"
+            android:selectAllOnFocus="true"
+            android:textAppearance="?android:attr/textAppearanceMedium">
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/old"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nee"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="50dp"
+            android:paddingLeft="@dimen/output_margin_buffer"
+            android:text="年齡:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/oldnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/old"
+            android:layout_alignBottom="@+id/old"
+            android:layout_toRightOf="@+id/old"
+            android:ems="5"
+            android:hint="0"
+            android:inputType="number"
+            android:paddingRight="30dp"
+            android:selectAllOnFocus="true"
+            android:textAppearance="?android:attr/textAppearanceMedium">
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/hei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/old"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="80dp"
+            android:paddingLeft="@dimen/output_margin_buffer"
+            android:text="身高:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/fatnum"
+            android:layout_alignBottom="@+id/fatnum"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="270dp"
+            android:layout_toRightOf="@+id/fatnum"
+            android:background="#C27E00"
+            android:onClick="input"
+            android:text="自行輸入"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/oldnum"
+            android:layout_alignBottom="@+id/oldnum"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="270dp"
+            android:layout_toRightOf="@+id/oldnum"
+            android:background="#C27E00"
+            android:onClick="changegender"
+            android:text="男性"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/heinum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/hei"
+            android:layout_alignBottom="@+id/hei"
+            android:layout_toRightOf="@+id/hei"
+            android:ems="5"
+            android:hint="0"
+            android:inputType="number"
+            android:paddingRight="30dp"
+            android:selectAllOnFocus="true"
+            android:textAppearance="?android:attr/textAppearanceMedium">
+
+            <requestFocus />
+        </EditText>
+
+
+        <TextView
+            android:id="@+id/fat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hei"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="30dp"
+            android:text="體重:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/fatnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/fat"
+            android:layout_alignBottom="@+id/fat"
+            android:layout_toRightOf="@+id/fat"
+            android:ems="5"
+            android:hint="0.0"
+            android:inputType="numberDecimal"
+            android:paddingRight="30dp"
+            android:selectAllOnFocus="true"
+            android:textAppearance="?android:attr/textAppearanceMedium">
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fat"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="@dimen/output_margin_buffer"
+            android:text="活動量:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/levelnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/level"
+            android:layout_alignBottom="@+id/level"
+            android:layout_toRightOf="@+id/level"
+            android:digits="123"
+            android:ems="5"
+            android:hint="1~3"
+            android:paddingRight="30dp"
+            android:selectAllOnFocus="true"
+            android:textAppearance="?android:attr/textAppearanceMedium">
+
+            <requestFocus />
+        </EditText>
+
+
+    </RelativeLayout>
+
+    <!--    <Button-->
+    <!--        android:id="@+id/comp"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+
+    <!--        android:layout_below="@+id/textView1"-->
+    <!--        android:layout_marginLeft="50dp"-->
+    <!--        android:layout_marginTop="230dp"-->
+    <!--        android:background="#C27E00"-->
+    <!--        android:onClick="comp"-->
+    <!--        android:text="COMP"-->
+    <!--        android:textSize="30sp" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/reset"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/textView1"-->
+<!--        android:layout_marginLeft="130dp"-->
+<!--        android:layout_marginTop="330dp"-->
+<!--        android:background="#C27E00"-->
+<!--        android:onClick="reset"-->
+<!--        android:text="RESET"-->
+<!--        android:textSize="30sp" />-->
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/textView1"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="400dp"-->
+<!--        android:background="@drawable/paper">-->
+
+
+<!--        &lt;!&ndash; TEXTVIEWS FOR BASE COST LABEL AND COMPUTATION  &ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/foramlwei"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_marginTop="50dp"-->
+<!--            android:paddingLeft="@dimen/output_margin_buffer"-->
+<!--            android:text=""-->
+<!--            android:textAppearance="?android:attr/textAppearanceMedium" />-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/weirange"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/foramlwei"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:paddingLeft="@dimen/output_margin_buffer"-->
+<!--            android:text=""-->
+<!--            android:textAppearance="?android:attr/textAppearanceMedium" />-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/needcal"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/weirange"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:paddingLeft="@dimen/output_margin_buffer"-->
+<!--            android:text=""-->
+<!--            android:textAppearance="?android:attr/textAppearanceMedium" />-->
+
+
+<!--    </RelativeLayout>-->
+
+
+</RelativeLayout>

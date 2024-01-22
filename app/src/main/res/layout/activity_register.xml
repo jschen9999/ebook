@@ -1,0 +1,206 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#D2E9FF"
+    tools:context=".register">
+
+    <RelativeLayout
+        android:layout_width="6000dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:background="#003060">
+
+        <ImageButton
+            android:id="@+id/countlogin"
+            android:layout_width="140dp"
+            android:layout_height="248dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="15dp"
+            android:background="#003060"
+            android:scaleType="fitCenter"
+            android:src="@drawable/count2" />
+
+        <ImageButton
+            android:id="@+id/loghome"
+            android:layout_width="74dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="0dp"
+            android:background="#005AB5"
+            android:scaleType="fitCenter"
+            android:src="@drawable/home" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/logpeople"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="250dp"
+        android:paddingLeft="@dimen/output_margin_buffer"
+        android:text="會員註冊"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#003060"
+        android:textSize="50dp"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/regaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="350dp"
+        android:paddingLeft="@dimen/output_margin_buffer"
+        android:text="帳號:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#003060"
+        android:textSize="30dp"
+        android:typeface="monospace" />
+
+    <EditText
+        android:id="@+id/regaccountedit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/regaccount"
+        android:layout_alignBottom="@+id/regaccount"
+        android:layout_toRightOf="@+id/regaccount"
+        android:ems="10"
+        android:hint="Username"
+        android:paddingRight="30dp"
+        android:selectAllOnFocus="true"
+        android:textAppearance="?android:attr/textAppearanceMedium">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/regpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="400dp"
+        android:paddingLeft="@dimen/output_margin_buffer"
+        android:text="密碼:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#003060"
+        android:textSize="30dp"
+        android:typeface="monospace" />
+
+    <EditText
+        android:id="@+id/regpasswordedit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/regpassword"
+        android:layout_alignBottom="@+id/regpassword"
+        android:layout_toRightOf="@+id/regpassword"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingRight="30dp"
+        android:selectAllOnFocus="true"
+        android:textAppearance="?android:attr/textAppearanceMedium">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/reregpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="450dp"
+        android:paddingLeft="@dimen/output_margin_buffer"
+        android:text="確認密碼:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#003060"
+        android:textSize="30dp"
+        android:typeface="monospace" />
+
+    <EditText
+        android:id="@+id/reregpasswordedit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/reregpassword"
+        android:layout_alignBottom="@+id/reregpassword"
+        android:layout_toRightOf="@+id/reregpassword"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingRight="30dp"
+        android:selectAllOnFocus="true"
+        android:textAppearance="?android:attr/textAppearanceMedium">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/regemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="490dp"
+        android:paddingLeft="@dimen/output_margin_buffer"
+        android:text="Email:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#003060"
+        android:textSize="30dp"
+        android:typeface="monospace" />
+
+    <EditText
+        android:id="@+id/regemailedit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/regemail"
+        android:layout_alignBottom="@+id/regemail"
+        android:layout_toRightOf="@+id/regemail"
+        android:ems="10"
+        android:hint="Email"
+        android:paddingRight="30dp"
+        android:selectAllOnFocus="true"
+        android:textAppearance="?android:attr/textAppearanceMedium">
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/regbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="560dp"
+        android:text="註冊"></Button>
+
+    <TextView
+        android:id="@+id/alreadyHaveaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="630dp"
+        android:paddingLeft="@dimen/output_margin_buffer"
+        android:text="已有帳號"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="	#272727"
+        android:textSize="20dp"
+        android:typeface="monospace" />
+
+    <ImageButton
+        android:id="@+id/question"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="630dp"
+        android:background="#D2E9FF"
+        android:scaleType="fitCenter"
+        android:src="@drawable/question" />
+
+
+</RelativeLayout>

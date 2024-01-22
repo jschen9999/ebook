@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BCD2EE"
+    tools:context=".backpackbook">
+
+    <ImageButton
+        android:id="@+id/nphbookclose"
+        android:layout_width="94dp"
+        android:layout_height="83dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:background="#003060"
+        android:scaleType="fitCenter"
+        android:src="@drawable/home" />
+
+    <ScrollView
+        android:id="@+id/s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/nptitle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:paddingLeft="@dimen/output_margin_buffer"
+            android:text="背包問題\n一種組合最佳化的NP完全問題。問題可以描述為：給定一組物品，每種物品都有自己的重量和價格，在限定的總重量內，我們如何選擇，才能使得物品的總價格最高。問題的名稱來源於如何選擇最合適的物品放置於給定背包中。
+          相似問題經常出現在商業、組合數學，計算複雜性理論、密碼學和應用數學等領域中, 也可以將背包問題描述為決定性問題，即在總重量不超過W的前提下，總價值是否能達到V。
+    定義
+我們有n種物品，物品j的重量為wj，價格為pj。
+我們假定所有物品的重量和價格都是非負的。背包所能承受的最大重量為W。
+如果限定每種物品只能選擇0個或1個，則問題稱為0-1背包問題。
+
+
+
+"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#191970"
+            android:textSize="40dp"
+            android:typeface="monospace" />
+    </ScrollView>
+</RelativeLayout>

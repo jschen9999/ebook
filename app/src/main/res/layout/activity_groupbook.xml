@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BCD2EE"
+    tools:context=".groupbook">
+
+    <ImageButton
+        android:id="@+id/nphbookclose"
+        android:layout_width="94dp"
+        android:layout_height="83dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:background="#003060"
+        android:scaleType="fitCenter"
+        android:src="@drawable/home" />
+
+    <ScrollView
+        android:id="@+id/s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/nptitle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:paddingLeft="@dimen/output_margin_buffer"
+            android:text="分團問題\nclique problem 是圖論中的一個NP完全（NP-complete）問題。
+         團（clique）是一個圖中兩兩相鄰的一個頂點集，或是一個完全子圖, 分團問題是問一個圖中是否有大小是k以上的團。任意挑出k個點，我們可以簡單的判斷出這k個點是不是一個團，所以這個問題屬於NP。
+       證明這問題是NP完備，我們可以很簡單的將獨立頂點集問題（英語：Independent set problem）(Independent set problem)歸約成這個問題。因為存在一個大小是k以上的分團，等價於它的補圖中存在一個大小是k以上的獨立集。
+
+
+
+
+"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#191970"
+            android:textSize="40dp"
+            android:typeface="monospace" />
+    </ScrollView>
+</RelativeLayout>

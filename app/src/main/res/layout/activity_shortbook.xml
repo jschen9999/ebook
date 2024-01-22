@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BCD2EE"
+    tools:context=".shortbook">
+
+    <ImageButton
+        android:id="@+id/nphbookclose"
+        android:layout_width="94dp"
+        android:layout_height="83dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:background="#003060"
+        android:scaleType="fitCenter"
+        android:src="@drawable/home" />
+
+    <ScrollView
+        android:id="@+id/s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/nptitle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:paddingLeft="@dimen/output_margin_buffer"
+            android:text="最短路徑\n是由起點到終點、權重最小的路徑，可能有許多條，也可能不存在。起點到終點不通、不存在路徑的時候，就沒有最短路徑。
+「最短路徑」不見得是邊最少、點最少的路徑。
+最短路徑是 NP-complete 問題；當圖上確定沒有負環，才是 P 問題。「負環 Negative Cycle 」是權重為負值的環。
+
+"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#191970"
+            android:textSize="40dp"
+            android:typeface="monospace" />
+    </ScrollView>
+</RelativeLayout>

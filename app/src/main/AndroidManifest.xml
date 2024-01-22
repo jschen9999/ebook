@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cornez.shippingcalculator">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/fon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".report"
+            android:exported="false" />
+        <activity
+            android:name=".vertex"
+            android:exported="false" />
+        <activity
+            android:name=".groupbook"
+            android:exported="false" />
+        <activity
+            android:name=".backpackbook"
+            android:exported="false" />
+        <activity
+            android:name=".shortbook"
+            android:exported="false" />
+        <activity
+            android:name=".debook"
+            android:exported="false" />
+        <activity
+            android:name=".drawbook"
+            android:exported="false" />
+        <activity
+            android:name=".npcbook"
+            android:exported="false" />
+        <activity
+            android:name=".nphardbook"
+            android:exported="false" />
+        <activity
+            android:name=".nphbook"
+            android:exported="false" />
+        <activity
+            android:name=".npbook"
+            android:exported="false" />
+        <activity
+            android:name=".forgetpassword"
+            android:exported="false" />
+        <activity
+            android:name=".register"
+            android:exported="false" />
+        <activity
+            android:name=".aboutus"
+            android:exported="true" />
+        <activity
+            android:name=".Mylove"
+            android:exported="true" />
+        <activity
+            android:name=".bookcase"
+            android:exported="true" />
+        <activity
+            android:name=".vertexpage"
+            android:exported="true" />
+        <activity
+            android:name=".subgrouppage"
+            android:exported="true" />
+        <activity
+            android:name=".backpackpage"
+            android:exported="true" />
+        <activity
+            android:name=".pathpage"
+            android:exported="true" />
+        <activity
+            android:name=".landmine"
+            android:exported="true" />
+        <activity
+            android:name=".drawpage"
+            android:exported="true" />
+        <activity
+            android:name=".Classification"
+            android:exported="true" />
+        <activity
+            android:name=".classlist"
+            android:exported="true" />
+        <activity
+            android:name=".NPcomplete"
+            android:exported="true" />
+        <activity
+            android:name=".NPhard"
+            android:exported="true" />
+        <activity
+            android:name=".np"
+            android:exported="true" />
+        <activity
+            android:name=".MyActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".intro" />
+        <activity
+            android:name=".output"
+            android:exported="true" />
+    </application>
+
+</manifest>

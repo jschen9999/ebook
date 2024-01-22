@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    android:background="#D2E9FF"
+    tools:context=".output">
+
+    <RelativeLayout
+        android:layout_width="6000dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:background="#003060">
+
+        <ImageButton
+            android:id="@+id/npclassficationclose"
+            android:layout_width="94dp"
+            android:layout_height="83dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:background="#003060"
+            android:scaleType="fitCenter"
+            android:src="@drawable/home" />
+
+        <TextView
+            android:id="@+id/npclassficationtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="80dp"
+            android:paddingLeft="@dimen/output_margin_buffer"
+            android:text="NP-problem"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FBFBFF"
+            android:textSize="40dp"
+            android:typeface="monospace" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="6000dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="150dp"
+        android:background="#D2E9FF">
+
+        <Button
+            android:id="@+id/draw"
+            android:layout_width="210dp"
+            android:layout_height="600dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#0066CC"
+            android:clickable="true"
+            android:text="著色問題"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#F0F0F0"
+            android:textSize="40dp"
+            android:typeface="monospace" />
+
+        <Button
+            android:id="@+id/landmine"
+            android:layout_width="210dp"
+            android:layout_height="600dp"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="0dp"
+            android:background="#0080FF"
+            android:clickable="true"
+            android:text="踩地雷"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#F0F0F0"
+            android:textSize="40dp"
+            android:typeface="monospace" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="6000dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="350dp"
+        android:background="#D2E9FF">
+
+        <Button
+            android:id="@+id/path"
+            android:layout_width="210dp"
+            android:layout_height="600dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#0080FF"
+            android:clickable="true"
+            android:text="最短路徑"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#F0F0F0"
+            android:textSize="40dp"
+            android:typeface="monospace" />
+
+        <Button
+            android:id="@+id/backpack"
+            android:layout_width="210dp"
+            android:layout_height="600dp"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="0dp"
+            android:background="#0066CC"
+            android:clickable="true"
+            android:text="背包問題"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#F0F0F0"
+            android:textSize="40dp"
+            android:typeface="monospace" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="6000dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="550dp"
+        android:background="#D2E9FF">
+
+        <Button
+            android:id="@+id/subgroup"
+            android:layout_width="210dp"
+            android:layout_height="600dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#0066CC"
+            android:clickable="true"
+            android:text="分團問題"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#F0F0F0"
+            android:textSize="40dp"
+            android:typeface="monospace" />
+
+        <Button
+            android:id="@+id/vertex"
+            android:layout_width="210dp"
+            android:layout_height="600dp"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="0dp"
+            android:background="#0080FF"
+            android:clickable="true"
+            android:text="頂點問題"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#F0F0F0"
+            android:textSize="40dp"
+            android:typeface="monospace" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

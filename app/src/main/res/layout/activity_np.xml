@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#D2E9FF"
+    tools:context=".output">
+
+    <RelativeLayout
+        android:layout_width="6000dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:background="#003060">
+
+        <ImageButton
+            android:id="@+id/npclose"
+            android:layout_width="94dp"
+            android:layout_height="83dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:background="#003060"
+            android:scaleType="fitCenter"
+            android:src="@drawable/home" />
+
+
+        <TextView
+            android:id="@+id/nptitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="50dp"
+            android:paddingLeft="@dimen/output_margin_buffer"
+            android:text="NP"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FBFBFF"
+            android:textSize="60dp"
+            android:typeface="monospace" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/nplike"
+        android:layout_width="53dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="620dp"
+        android:background="#D2E9FF"
+        android:scaleType="fitCenter"
+        android:src="@drawable/like" />
+
+    <ImageButton
+        android:id="@+id/npstore"
+        android:layout_width="53dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="620dp"
+        android:background="#D2E9FF"
+        android:scaleType="fitCenter"
+        android:src="@drawable/store" />
+
+    <ImageButton
+        android:id="@+id/npbook"
+        android:layout_width="233dp"
+        android:layout_height="415dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="200dp"
+        android:background="#D2E9FF"
+        android:scaleType="fitCenter"
+        android:src="@drawable/np" />
+
+
+</RelativeLayout>

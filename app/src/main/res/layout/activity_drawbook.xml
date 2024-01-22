@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BCD2EE"
+    tools:context=".drawbook">
+
+    <ImageButton
+        android:id="@+id/npcbookclose"
+        android:layout_width="94dp"
+        android:layout_height="83dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:background="#003060"
+        android:scaleType="fitCenter"
+        android:src="@drawable/home" />
+
+    <ScrollView
+        android:id="@+id/s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/nptitle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:paddingLeft="@dimen/output_margin_buffer"
+            android:text="著色問題\nGraph Coloring Problem，簡稱GCP
+數學定義：給定一個無向圖G=（V, E），其中V為頂點集合，E為邊集合，圖著色問題即為將V分為K個顏色組，每個組形成一個獨立集，即其中沒有相鄰的頂點。其最佳化版本是希望獲得最小的K值。
+
+路徑著色問題
+G是一個有限有向圖並且G的每個頂點的出度都是k。G的一個同步著色滿足以下兩個條件：
+1)G的每個頂點有且只有一條出邊被染成了1到k之間的某種顏色；
+2)G的每個頂點都對應一種走法，不管你從哪裡出發，按該走法走，最後都結束在該頂點。
+有向圖G存在同步著色的必要條件是G是強連通而且是非周期的。一個有向圖是非周期的是指該圖中包含的所有環的長度沒有大於1的公約數。路線著色定理這兩個條件(強連通和是非周期)也是充分的。也就是說,有向圖G存在同步著色若且唯若G是強連通而且是非周期的。
+道路著色問題（Road Coloring Problem）是圖論中最著名的猜想之一。通俗的說，這個猜想認為，可以繪製一張“萬能地圖”，指導人們到達某一目的地，不管他們原來在什麼位置。這個猜想最近被以色列數學家艾夫拉漢· 特雷特曼(Avraham Trahtman)在2007年9月證明。
+
+特雷特曼在數學上的這一成果極為令人矚目，英國《獨立報》為此事專門發表了一篇題為“身無分文的移民成了數學超級明星”的文章，給予了高度的評價。
+以色列人也為特雷特曼取得的成就感到無比的驕傲。特拉維夫電視台中斷了正常的節目播放，以第一時間發布了這一重大訊息，連中東其他國家的主流媒體也作了大篇幅的相關報導。
+
+"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#191970"
+            android:textSize="40dp"
+            android:typeface="monospace" />
+    </ScrollView>
+</RelativeLayout>
